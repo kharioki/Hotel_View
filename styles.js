@@ -23,4 +23,24 @@ export const gs = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  sectionContainer: {
+    paddingVertical: 24,
+    paddingHorizontal: 32,
+    marginBottom: 8,
+    backgroundColor: colors.lightBg,
+  },
+  sectionTitle: {
+    fontWeight: '700',
+    color: colors.text,
+    fontSize: 15,
+  },
+  title: {
+    color: colors.text,
+    fontSize: 30,
+  },
+  divider: {
+    borderBottomColor: '#444',
+    borderBottomWidth: 1,
+    marginVertical: 24,
+  },
 });
