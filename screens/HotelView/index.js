@@ -3,6 +3,7 @@ import {View, Text, StyleSheet, StatusBar} from 'react-native';
 import {colors} from '../../styles';
 
 import Header from './components/Header';
+import Bookmark from './components/Bookmark';
 
 export default function HotelView() {
   return (
@@ -10,6 +11,10 @@ export default function HotelView() {
       <StatusBar barStyle="light-content" />
 
       <Header />
+
+      <View>
+        <Bookmark />
+      </View>
     </View>
   );
 }
