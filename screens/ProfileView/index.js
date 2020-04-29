@@ -1,11 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {
-  View,
-  StyleSheet,
-  ScrollView,
-  StatusBar,
-  ActivityIndicator,
-} from 'react-native';
+import {View, StyleSheet, StatusBar, ActivityIndicator} from 'react-native';
 
 import {gs, colors} from '../../styles';
 

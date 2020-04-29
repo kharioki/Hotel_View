@@ -18,8 +18,8 @@ export default function Address() {
 
       <View style={styles.addressContainer}>
         <Image
-          source={require('../../../assets/red.png')}
-          style={{width: 32, height: 32, opacity: 0.5}}
+          source={require('../../../assets/map-marker.png')}
+          style={{width: 64, height: 64, opacity: 0.5}}
         />
 
         <View style={{marginLeft: 8, marginTop: 12}}>
