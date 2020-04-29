@@ -12,6 +12,7 @@ import {gs, colors} from '../../styles';
 import Header from './components/Header';
 import Stats from './components/Stats';
 import About from './components/About';
+import Location from './components/Location';
 
 export default function ProvileView() {
   const [data, setData] = useState({});
@@ -45,6 +46,7 @@ export default function ProvileView() {
       <Header user={data} />
       <Stats />
       <About />
+      <Location />
     </View>
   );
 }
