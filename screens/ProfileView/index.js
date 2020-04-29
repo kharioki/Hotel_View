@@ -13,6 +13,7 @@ import Header from './components/Header';
 import Stats from './components/Stats';
 import About from './components/About';
 import Location from './components/Location';
+import Photos from './components/Photos';
 
 export default function ProvileView() {
   const [data, setData] = useState({});
@@ -47,6 +48,7 @@ export default function ProvileView() {
       <Stats />
       <About />
       <Location />
+      <Photos />
     </View>
   );
 }

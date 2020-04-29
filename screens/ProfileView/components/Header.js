@@ -10,7 +10,6 @@ Ionicons.loadFont();
 Entypo.loadFont();
 
 export default function Header({user}) {
-  console.log({user});
   const name = `${user.name.first} ${user.name.last}`;
 
   return (
