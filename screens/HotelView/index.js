@@ -7,6 +7,7 @@ import Bookmark from './components/Bookmark';
 import About from './components/About';
 import Stats from './components/Stats';
 import Amenities from './components/Amenities';
+import Address from './components/Address';
 
 export default function HotelView() {
   return (
@@ -20,6 +21,7 @@ export default function HotelView() {
         <About />
         <Stats />
         <Amenities />
+        <Address />
       </View>
     </View>
   );
