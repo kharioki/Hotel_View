@@ -11,6 +11,7 @@ import {gs, colors} from '../../styles';
 
 import Header from './components/Header';
 import Stats from './components/Stats';
+import About from './components/About';
 
 export default function ProvileView() {
   const [data, setData] = useState({});
@@ -43,6 +44,7 @@ export default function ProvileView() {
       <StatusBar barStyle="light-content" />
       <Header user={data} />
       <Stats />
+      <About />
     </View>
   );
 }
