@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {
   View,
-  Text,
   StyleSheet,
   ScrollView,
   StatusBar,
@@ -11,6 +10,7 @@ import {
 import {gs, colors} from '../../styles';
 
 import Header from './components/Header';
+import Stats from './components/Stats';
 
 export default function ProvileView() {
   const [data, setData] = useState({});
@@ -40,7 +40,9 @@ export default function ProvileView() {
 
   return (
     <View style={styles.container}>
+      <StatusBar barStyle="light-content" />
       <Header user={data} />
+      <Stats />
     </View>
   );
 }
