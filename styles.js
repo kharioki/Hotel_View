@@ -36,7 +36,7 @@ export const gs = StyleSheet.create({
   },
   title: {
     color: colors.text,
-    fontSize: 30,
+    fontSize: 24,
   },
   divider: {
     borderBottomColor: '#444',

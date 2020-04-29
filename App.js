@@ -3,11 +3,13 @@ import {ScrollView, StyleSheet} from 'react-native';
 import {colors} from './styles';
 
 import HotelView from './screens/HotelView';
+import ProvileView from './screens/ProfileView';
 
 const App = () => {
   return (
     <ScrollView style={styles.container}>
-      <HotelView />
+      {/* <HotelView /> */}
+      <ProvileView />
     </ScrollView>
   );
 };
