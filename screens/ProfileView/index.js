@@ -1,15 +1,47 @@
-import React from 'react';
-import {View, Text, StyleSheet, ScrollView} from 'react-native';
+import React, {useState, useEffect} from 'react';
+import {
+  View,
+  Text,
+  StyleSheet,
+  ScrollView,
+  StatusBar,
+  ActivityIndicator,
+} from 'react-native';
 
 import {gs, colors} from '../../styles';
 
 import Header from './components/Header';
 
 export default function ProvileView() {
+  const [data, setData] = useState({});
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const res = await fetch(
+        'https://randomuser.me/api/?inc=name,picture,location&noinfo',
+      );
+      const users = await res.json();
+      setData(users.results[0]);
+      setLoading(false);
+    };
+
+    fetchData();
+  }, []);
+
+  if (loading) {
+    return (
+      <View style={[gs.center, styles.container]}>
+        <StatusBar barStyle="light-content" />
+        <ActivityIndicator size="large" />
+      </View>
+    );
+  }
+
   return (
-    <ScrollView style={styles.container}>
-      <Header />
-    </ScrollView>
+    <View style={styles.container}>
+      <Header user={data} />
+    </View>
   );
 }
 
